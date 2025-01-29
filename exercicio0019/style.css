@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* 
+  em HTML (id) é (#) em CSS, "apenas 1 elemento pór pagina"
+  em HTML (class) é (.) em CSS, "varios elementos por pagina"
+  
+*/
+body{
+    background-image: linear-gradient(to bottom,rgba(68, 161, 238, 0.452) , rgba(34, 34, 34, 0.301));
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+}
+h1 {
+    color:rgb(0, 38, 255); 
+
+}
+h1#principal{
+    background-color: rgb(7, 59, 170);
+    color: white;
+    text-align: center;
+}
+h2{
+    color: rgb(2, 88, 168);
+}
+p {
+    text-indent: 10px;
+}
+.basico{
+    background-color:rgba(0, 0, 0, 0.781);
+    
+}
+.intermediario{
+    background-color:rgba(145, 145, 145, 0.705);;
+}
+.avancado{
+    background-color: rgba(85, 85, 211, 0.479);
+}
+.destaque{
+    background-color: azure;
+    font-family: monospace;
+}

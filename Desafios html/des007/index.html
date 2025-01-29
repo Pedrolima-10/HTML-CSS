@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>Para usarmos imagens que se adaptam ao tamanho da tela precisamos usar a tag <STRONG>{picture}</STRONG> e dentro dela usar a tag <strong>{img}</strong> como imagem principal, e após isso usar a tag  <strong>{source media type}</strong> para informar qual tamanho de imagem você vai querer!
+    <p>Exemplo: <br>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/img1.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/img2.png" type="image/png">
+        <img src="imagens/img3.png" alt="Imagem fléxifel">
+    </picture>  
+    <h1>Reproduzindo audio</h1> 
+    <p>Vamos aprender a reproduzir áudios usando html <br> abixo está um podcast do professor gustavo guanabara, aperte play para reproduzir:</p>
+    <audio src="midia/guanacast-33.mp3"controls autoplay></audio>
+    <p>Para reproduzir áudios dessa maneira você precisa usar a tag <strong>{audio}</strong> seselcionar o áudio que vai querer, usar o comando <strong>{controls}</strong> para adicionar a barra de dar play e pausar, e por ultimo usar o comando <strong>{autoplay}</strong>, assim seu áudio estara disponivel no seu site como no exemplo acima.</audio></p>
+    <br>
+    <p>Outra forma de adicionar áudio para navegadores que não tem compatibilidade com aulguns formatos de arquivos é assim: <br>{source src="midia/guanacast-33.mp3" type="audio/mpeg"}<strong>PARA mp3</strong><br>{source src="midia/guanacast-33.ogg" type="audio/ogg"} <strong>PARA ogg</strong><br>{source src="midia/guanacast-33.wav" type="audio/wav"} <strong>PARA wav</strong></p>
+    <p>Lembrando o html vai testando esses códigos em ordem  para ver qual vai funcionar, caso nenhum funcione, infelizmente seu navegador não é compativel com áudio <a href="midia/guanacast-33.mp3" download="midia/guanacast-33.mpeg"type="audio/mpeg">clique aqui para baixar o mp3</a>. você tem que se atentar no type que vai colocar pois cada arquivo é um type diferente</p>
+    <p>Lembrando que a tag {audio} tem alguns parametros para usar um deles é o <strong>{preload}</strong> que você escolhera o <strong>"metadata ou o none "</strong>, pois não é recomendado deixar como padrão. e você escolhera se vai querer o áudio com o <strong>{controls}</strong> que o usuário que apertara o play ou com o <strong>{autoplay}</strong> que o áudio começa automatico</p>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Trabalhando links externos</h1>
+    <p>Para usarmos links externos dentro de um site precisamos envelopar o texto que queremos usar como âncora para um limk e usar a tag: {a} veja o exemplo:</p>
+    <p>Entre no <a href=" https://t.me/cursoemvideo" target="_blank" rel="external">canal do telegram do curso em video</a></p>
+    <p>Se inscreva no <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ"target="_blank"rel="external">canal do curso em video</a></p>
+    <p> <p>Para abrir um link exteno em outra janela e sem precisar fechar a janela do seu site, você precisa usar duas tags dentro da tag {a} são : {target="_blank"} e a tag {rel="external"}</p></p>
+    <h1>Trabalhando com links em imagens</h1>
+    <p>Para usamos links externos em imagens precisamos usar a mesma logica usada a cima, porem ao inves de envelopar texto você envelopa o código da imagem, exemplo abaixo com a logo do meu time de coração que clicando você ira para o site oficial do clube.</p>
+    <a href="https://www.palmeiras.com.br/"target="_blank"rel="external"><img src="https://lncimg.lance.com.br/uploads/2024/04/Palmeiras-1-1.png" alt="logo palmeiras"></a>
+    <h1>Trabalhando com links internos</h1>
+    <p>Para usarmos links internos vamos precisar criar outro arquivo html na mesma pasta que está o principal, e assim usar mesma logica mas ao inves de usar a url de um site usaremos o diretorio da página criada, veja o exemplo a seguir:</p>
+    <p>Está é a primeira página, para ir para a proxima página <a href="pag002.html"rel="next">clique aqui</a></p>
+    <p>Para identificar a proxima página você vai usar o {rel="next"} dentro da tag {a}, do mesmo jeito que usamos em Links externos, e para indentificar a página anterior usamos a tag {rel="prev"}.</p>
+    <h1>Links para download</h1>
+    <p>Para usar links para fazer download direto do seu navegador, você tem que reconhecer o que se trata o link, o formato dele pois cada formato tem seu tipo de código, <strong>[exemplo formato zip]</strong> : você envelopa o oque vai ser seu link e coloca dentro da tag {a} após isso você usa a tag { download="nome do seu arquivo.zip"} e depois disso a tag {type= "application/zip}</p>  
+    <p>*<strong>Lembrando, cada formato tem seu código, para saber o código do formato que você quer acesse o site </strong>: <a href="https://www.iana.org/assignments/media-types/" target="_blank" rel="external">iana.org</a></p> 
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf"type="application/pdf" >Baixar o livro em pdf</a> </li>
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="Ligações em toda parte.zip" type="application/zip" >Baixar arquivo em zip</a></li>
+   </ul>
+</body>
+</html>

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulo';
+    src: url(fontes/GoboldRegular.otf) format(opentype);
+}
+:root {
+    --cor01: #00CAD4;
+    --cor02: #17A3AA;
+    --cor03: #267B80;
+    --cor04: #285355;
+
+    --fonte-principal:  Arial, Verdana, Helvetica, sans-serif;
+    --fonte-titulo: 'titulo'
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+body{
+    background-color: rgb(173, 173, 173);
+}
+header{
+    background-image: linear-gradient(to right, var(--cor02), var(--cor03));
+    color: rgba(245, 245, 245, 0.932);
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 20px;
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.1em;
+    text-shadow: 0px 8px 11px rgba(0, 0, 0, 0.267);
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.473);
+}
+
+main{
+    background-color: var(--cor04);
+    color: white;
+    max-width: 800px;
+    min-width: 360px;
+    padding: 40px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+
+}
+article.conteudo h2{
+    background-image: linear-gradient(to right, var(--cor03) ,transparent);    
+    color: aliceblue;
+    font-family: var(--fonte-principal);
+    font-size: 1.5em;
+    font-weight:800 ;
+    padding: 10px;
+}
+article.conteudo  img{
+    margin-top: 30px;
+
+}
+article.conteudo p{
+    background-image:linear-gradient(to right, var(--cor03), transparent) ;
+    line-height: 1.5em;
+    padding: 40px 0px 40px 15px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 10px;
+
+}
+article.adicional {
+    background-color: var(--cor03);
+    width: 300px;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.281);
+    
+}
+article.adicional h2{
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    padding: 6px 0px 6px 0px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+}
+article.adicional  ul a{
+    color: rgba(0, 0, 0, 0.664);
+    text-decoration: none;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: var(--fonte-principal);
+    
+}
+article.adicional  ul a:hover{
+    background-color: var(--cor02);
+    color: aliceblue;
+    transition-duration: 0.3s;
+}
