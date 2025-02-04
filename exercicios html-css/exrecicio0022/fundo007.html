@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Posicionamento Central</title> 
+    <style>
+        /*
+
+        Para centralizar uma box dentro de um container você usará os seguintes comando:
+        
+        deixe o container na {position :relative}
+        e a box na {position :absolute}
+
+        após isso na box que quer centralizar use os comandos:  left: 50%;   top: 50%;
+                   
+        
+        e depois use o {transform:translate(-50%,-50%);}
+        assim sua box irá centralizar
+        
+        */
+        section#container{
+            height: 96vh;
+            padding: 10px;
+           
+            background-color: blueviolet;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+           
+            position: relative;
+        }
+        
+        article#conteudo{
+            height: 200px;
+            width: 400px;
+           
+            background-color: rgb(255, 238, 0);
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            position: absolute;
+           
+           
+            left: 50%;
+            top:  50%;
+            
+            
+            transform: translate(-50%, -50%);
+        }
+    
+    </style>
 </head>
 <body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
     
 </body>
 </html>
