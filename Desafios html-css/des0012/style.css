@@ -13,6 +13,9 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    min-height: 100vh; 
+}
 
 header{
     background-color: black;
@@ -21,7 +24,7 @@ header{
 }
 header>h1{
     font-family: var(--fonte-destaque);
-    font-size: 5em;
+    font-size: 4.8vw;
     padding-top: 60px;
     font-variant: small-caps;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.137);
@@ -47,10 +50,12 @@ a:hover{
 
 
 section{
+   
+    line-height: 2em ;
+    font-size: 2.9vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
-    line-height:2em ;
 
 
 }
@@ -68,6 +73,7 @@ section.img1{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.329);
 }
 
 section.img2{
@@ -78,12 +84,15 @@ section.img2{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.329);
 }
 
 
 section.img1 >p, section.img2 >p{
-    background-color: rgba(0, 0, 0, 0.363);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.527);
+    display: inline-block;
+    padding: 20px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.473);
 }
 
 
@@ -93,4 +102,5 @@ footer{
     color: white;
     padding: 5px;
     text-align: center;
+    
 }
