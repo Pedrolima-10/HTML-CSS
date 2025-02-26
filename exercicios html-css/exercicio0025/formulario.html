@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        form{
+            background-color: bisque;
+            height: 150px;
+            width: 300px;
+            padding: 20px
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadatro.php" autocomplete="off" >
+        <p><label for="nome"> Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="nome"> </p>
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="sobrenome"><p>
+        <input type="submit" value="ENVIAR">    
+    </form>
+</body>
+</html>
