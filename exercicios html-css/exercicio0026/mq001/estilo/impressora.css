@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*CSS para impressoras*/
+
+*{
+    padding: 10px;
+    margin: 0px;
+}
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+}
+
+article{
+    width: 100vw;
+    background-color: bisque;
+}
+footer::after{
+    content: 'esse artigo é uma versão para impressoras';
+}
