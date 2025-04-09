@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex direction
+    </title>
+    <style>
+        div.conteiner{
+            background-color: lightcoral;
+            height: 100px;
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: nowrap; é a mesma coisa que flex-flow que é a junsão das duas tags acima*/
+            flex-flow: row  wrap;
+
+        }
+        div.itens{
+            flex: auto;
+            background-color: lightcyan;
+            padding: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.527);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="itens">Exemplo de Bloco A</div>
+        <div class="itens">Exemplo de Bloco B</div>
+        <div class="itens">Exemplo de Bloco C</div>
+        <div class="itens">Exemplo de Bloco D</div>
+        <div class="itens">Exemplo de Bloco F</div>
+        <div class="itens">Exemplo de Bloco G</div>
+    </div>
+    
+</body>
+</html>
