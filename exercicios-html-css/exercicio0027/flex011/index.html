@@ -15,18 +15,31 @@
             background-color: lightseagreen;
             border: 1px solid black;
             text-align: center;
-            flex-basis: 200px;
+            flex-basis: 250px;  
+        }
+
+        div#cx1{  
             flex-shrink: 1;
             flex-grow: 1;
+
+        }
+        div#cx2{
+            flex-shrink: 2;
+            flex-grow: 3;
+
+        }
+        div#cx3{
+            flex-shrink: 1;
+            flex-grow: 1;
+
         }
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="itens">A</div>
-        <div class="itens">B</div>
-        <div class="itens">C</div>
+        <div class="itens" id="cx1">A</div>
+        <div class="itens" id="cx2">B</div>
+        <div class="itens" id="cx3">C</div>
     </div>
-    
 </body>
 </html>
