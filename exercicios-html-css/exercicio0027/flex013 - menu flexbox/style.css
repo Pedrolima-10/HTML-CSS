@@ -6,6 +6,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+span#burguer{
+    background-color: rgb(56, 56, 56);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+span#burguer:hover{
+    background-color: azure;
+    color: black;
+}
 body{
     background-color: lightgray;
 }
@@ -18,15 +30,15 @@ header{
     align-items: center;
 }
 header > h1 {
-    border: 1px dotted black;
     color: aliceblue;
     flex: 0 0 200px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.521);
 }
 nav{
-    border: 1px dotted black;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: space-around;
+    
  
 }
 nav > a {
@@ -34,7 +46,7 @@ nav > a {
     text-align: center;
     color: aliceblue;
     background-color: black;
-    margin: 5px;
+    margin: 2px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -46,8 +58,14 @@ nav > a:hover{
 
 main{
     background-color: white;
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
     padding: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.349);
     border-radius: 10px;
+    width: 70%;
+    height: 50vh;
+
+
 }
