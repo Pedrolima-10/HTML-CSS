@@ -12,13 +12,36 @@ body{
 header{
     background-color: grey;
     padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 header > h1 {
     border: 1px dotted black;
     color: aliceblue;
+    flex: 0 0 200px;
 }
 nav{
     border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+ 
+}
+nav > a {
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav > a:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: bacground-color, .3s ;
 }
 
 main{
