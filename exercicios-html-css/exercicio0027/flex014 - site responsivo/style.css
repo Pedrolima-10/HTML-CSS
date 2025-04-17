@@ -10,7 +10,12 @@ body{
     font-size: 1em;
     line-height: 1.5em;
 }
-h1, h2, p {
+h1, h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.2em;
+}
+p {
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -21,19 +26,58 @@ header{
 section.flex-content{
     background-color:gray;
     padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+section > article{
+}
+article.media-text{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+article.text-media{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+article > div.text{
+    flex: 1 1 400px;
+  
+}
+article > div.media{
+  
+    flex:  1 0 400px;
+}
+div.media > img{
+    display: block;
+    margin:auto ;
+    width: 300px;
+    padding-bottom: 20px;
+
+}
+div.media > iframe{
+    display: block;
+    margin: auto;
+    width: 90%;
 }
 section.normal{
     padding: 20px;
 }
 footer{
-    padding: 2px;
     background-color: black;
-    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    height: 25px;
+
 }
 footer > p{
     text-align: center;
     font-weight: bold;
     color: aliceblue;
+    font-size: 0.9em;
 
 }
 footer a{
